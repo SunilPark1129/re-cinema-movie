@@ -4,7 +4,7 @@ This page fetches and manages the resulting value in an object.
 Created by Sunil Park
 */
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {
   StyledSectionSearch,
   StyledPreventAutoFit,
@@ -29,8 +29,6 @@ const Lists = ({
   viewBy,
   setSelectedMovieID,
 }) => {
-  const unmounted = useRef(true);
-
   // fetch and get the result value.
   const { datas, isLoading, requestMovie } = APIUtils();
 
@@ -39,7 +37,7 @@ const Lists = ({
 
   // When a query to be fetched is obtained, initial values of objects are created in advance to prevent various errors.
   useEffect(() => {
-    if (!unmounted.current && query !== undefined) {
+    if (query !== undefined) {
       if (!obj.hasOwnProperty(query)) {
         setObj({
           ...obj,
@@ -52,9 +50,6 @@ const Lists = ({
         });
       }
     }
-    return () => {
-      unmounted.current = false;
-    };
   }, [query]);
 
   // If the fetch is successful, the data value is saved into the object.

@@ -4,7 +4,7 @@ This page is where users can see and pick a searched history.
 Created by Sunil Park
 */
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/main_logo.png";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -19,13 +19,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Aside = () => {
-  const unmounted = useRef(true);
   const { id } = useParams();
   const navigate = useNavigate();
   const [historyArray, setHistoryArray] = useState([]);
 
   useEffect(() => {
-    if (!unmounted.current && id !== undefined) {
+    if (id !== undefined) {
       setHistoryArray((oldArray) => {
         // Removes the history if the id already exist in the array
         oldArray.map((item, idx) => {
@@ -45,10 +44,6 @@ const Aside = () => {
         return [id, ...oldArray];
       });
     }
-
-    return () => {
-      unmounted.current = false;
-    };
   }, [id]);
 
   // Removes the selected index history from the array.

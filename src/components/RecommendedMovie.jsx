@@ -4,7 +4,7 @@ It recommends a movie by randomly selecting one of the filtered movies.
 Created by Sunil Park
 */
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -18,7 +18,6 @@ import ImageLoading from "../hooks/ImageLoading";
 import PosterNull from "./PosterNull";
 
 const RecommendedMovie = ({ datas, setSelectedMovieID }) => {
-  const unmounted = useRef(true);
   const { ImageLoad, isImageLoading } = ImageLoading();
 
   // Randomly declare the index to be used in the array containing movie data in randomNum.
@@ -38,8 +37,7 @@ const RecommendedMovie = ({ datas, setSelectedMovieID }) => {
   // A new random number is obtained each time the component renders.
   // The component usually renders when the genre or page change.
   useEffect(() => {
-    !unmounted.current && refreshOnclick();
-    return () => (unmounted.current = false);
+    refreshOnclick();
   }, [datas]);
 
   useEffect(() => {
