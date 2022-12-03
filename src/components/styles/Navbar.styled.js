@@ -5,7 +5,6 @@ export const StyledNavbar = styled.nav `
   padding: 1rem 2rem;
   gap: 2rem;
   background-color: ${({ theme }) => theme.colors.dark};
-  min-width: ${({ theme }) => theme.minWidth};
 
   img {
     height: 2.5rem;

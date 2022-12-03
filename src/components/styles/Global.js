@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle `
 *{
     box-sizing: border-box;
     margin: 0;
@@ -25,7 +25,8 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: ${({ theme }) => theme.colors.light};
     font-size: 1rem;
-
+    min-width: ${({ theme }) => theme.minWidth};
+    
     @media (max-width: ${({ theme }) => theme.tablet}) {
         font-size: .9rem;
     }    
