@@ -12,12 +12,10 @@ export const GlobalStyles = createGlobalStyle `
      
     &::-webkit-scrollbar-track {
         background-color:${({ theme }) => theme.colors.light};
-        box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.main};
     }
     
     &::-webkit-scrollbar-thumb {
-        background-color: ${({ theme }) => theme.colors.main};
-        box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.reversedClr};
+        background-color: ${({ theme }) => theme.colors.dark};
     }
 }
 
