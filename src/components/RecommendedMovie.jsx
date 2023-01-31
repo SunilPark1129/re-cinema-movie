@@ -60,7 +60,7 @@ const RecommendedMovie = ({ datas, setSelectedMovieID }) => {
     randomNum !== null && (
       <StyledRecommendedMovie>
         <StyledRecommendedText>
-          <h4>Recommended</h4>
+          <h1>Recommended</h1>
           <h3>{randomNum.title}</h3>
           <StyledRecommendedButton>
             <button onClick={contentOnClick}>More Detail</button>

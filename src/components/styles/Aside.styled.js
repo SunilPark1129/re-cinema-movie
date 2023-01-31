@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledAside = styled.aside `
+export const StyledAside = styled.aside`
   flex: 1 1 20%;
   background-color: ${({ theme }) => theme.colors.dark};
   display: flex;
@@ -8,7 +8,7 @@ export const StyledAside = styled.aside `
   align-items: center;
   gap: 1rem;
 
-  h3 {
+  h1 {
     color: ${({ theme }) => theme.colors.constLight};
   }
 
@@ -141,7 +141,7 @@ export const StyledAside = styled.aside `
   }
 `;
 
-export const StyledAsideLogo = styled.div `
+export const StyledAsideLogo = styled.div`
   height: 160px;
   img {
     width: 10em;
@@ -154,7 +154,7 @@ export const StyledAsideLogo = styled.div `
   }
 `;
 
-export const StyledAsideHistory = styled.div `
+export const StyledAsideHistory = styled.div`
   display: flex;
   width: 80%;
   justify-content: center;
@@ -168,7 +168,7 @@ export const StyledAsideHistory = styled.div `
   }
 `;
 
-export const StyledAsideHistoryText = styled.div `
+export const StyledAsideHistoryText = styled.div`
   display: flex;
   overflow: hidden;
   border-radius: 0.5rem;

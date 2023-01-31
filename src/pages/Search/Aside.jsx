@@ -58,7 +58,7 @@ const Aside = () => {
       <StyledAsideLogo>
         <img src={logo} alt="CM_logo" />
       </StyledAsideLogo>
-      <h3 className="searchpage">SEARCH</h3>
+      <h1 className="searchpage">SEARCH</h1>
       <Input searchpage={true} />
       <span></span>
       {historyArray.length !== 0 && <h3 className="history">History</h3>}

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledRecommendedMovie = styled.section `
+export const StyledRecommendedMovie = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 50rem;
@@ -20,14 +20,14 @@ export const StyledRecommendedMovie = styled.section `
   }
 `;
 
-export const StyledRecommendedText = styled.div `
+export const StyledRecommendedText = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto 0 1rem 1rem;
   z-index: 99;
   gap: 0.5rem;
 
-  h4 {
+  h1 {
     font-size: 1.2em;
     font-weight: bolder;
     color: ${({ theme }) => theme.colors.reversedClr};
@@ -40,7 +40,7 @@ export const StyledRecommendedText = styled.div `
   }
 `;
 
-export const StyledRecommendedButton = styled.div `
+export const StyledRecommendedButton = styled.div`
   display: flex;
   gap: 0.5rem;
 
@@ -59,7 +59,7 @@ export const StyledRecommendedButton = styled.div `
   }
 `;
 
-export const StyledRecommendedImage = styled.div `
+export const StyledRecommendedImage = styled.div`
   position: absolute;
   right: 0;
   top: 0;

@@ -18,7 +18,7 @@ const Aside = ({ genreID, setGenreID }) => {
       <StyledAsideLogo>
         <img src={logo} alt="CM_logo" />
       </StyledAsideLogo>
-      <h3>GENRES</h3>
+      <h1>GENRES</h1>
       <h4>{request[genreID].genre}</h4>
       <span />
       <ul>

@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-const movieListAni = keyframes `
+const movieListAni = keyframes`
 0% {
     transform: translateY(0);
     // z-index: 99;
@@ -20,7 +20,7 @@ const movieListAni = keyframes `
 }
 `;
 
-export const StyledListByImage = styled.article `
+export const StyledListByImage = styled.article`
   display: flex;
   flex: 0 0 20%;
   padding-bottom: 30%;
@@ -35,6 +35,10 @@ export const StyledListByImage = styled.article `
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    &:hover {
+      filter: brightness(120%);
+    }
   }
 
   .loading {
@@ -56,7 +60,7 @@ export const StyledListByImage = styled.article `
   }
 `;
 
-export const StyledListByText = styled.article `
+export const StyledListByText = styled.article`
   display: flex;
   flex: 1 1 100%;
   height: 8rem;
@@ -78,7 +82,7 @@ export const StyledListByText = styled.article `
   }
 `;
 
-export const StyledListByTextRanking = styled.div `
+export const StyledListByTextRanking = styled.div`
   background-color: ${({ theme }) => theme.colors.main};
   height: 100%;
   display: flex;
@@ -91,7 +95,7 @@ export const StyledListByTextRanking = styled.div `
   min-width: 40px;
 `;
 
-export const StyledListByTextInfo = styled.div `
+export const StyledListByTextInfo = styled.div`
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;

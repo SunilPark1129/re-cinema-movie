@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { StyledListByImage } from "./MovieList.styled";
 
-export const StyledPage = styled.section `
+export const StyledPage = styled.section`
   display: flex;
   width: 100%;
 
@@ -10,7 +10,7 @@ export const StyledPage = styled.section `
   }
 `;
 
-export const StyledMain = styled.main `
+export const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -45,27 +45,21 @@ export const StyledMain = styled.main `
   }
 `;
 
-export const StyledSection = styled.section `
+export const StyledSection = styled.section`
   display: flex;
   flex-wrap: wrap;
-
-  :hover ${StyledListByImage}:not(:hover) {
-    filter: brightness(50%) saturate(50%);
-  }
 `;
 
-export const StyledSectionSearch = styled(StyledSection)
-`
+export const StyledSectionSearch = styled(StyledSection)`
   min-height: 40rem;
 `;
 
-export const StyledRecommended = styled.header `
+export const StyledRecommended = styled.header`
   width: 100%;
   min-height: 18rem;
 `;
 
-export const StyledSectionHeader = styled(StyledSection)
-`
+export const StyledSectionHeader = styled(StyledSection)`
   display: flex;
   gap: 1rem;
   padding: 1em;
@@ -102,7 +96,7 @@ export const StyledSectionHeader = styled(StyledSection)
   }
 `;
 
-export const StyledFeature = styled.section `
+export const StyledFeature = styled.section`
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -138,12 +132,12 @@ export const StyledFeature = styled.section `
   }
 `;
 
-export const StyledPreventAutoFit = styled.div `
+export const StyledPreventAutoFit = styled.div`
   height: auto;
   flex: 1 1 10%;
 `;
 
-export const StyledYearStyle = styled.section `
+export const StyledYearStyle = styled.section`
   display: flex;
   align-items: center;
   gap: 0 !important;
@@ -183,13 +177,13 @@ export const StyledYearStyle = styled.section `
   }
 `;
 
-export const StyledSearchDescription = styled.article `
+export const StyledSearchDescription = styled.article`
   width: 100%;
   z-index: 3;
   padding: 2rem;
 `;
 
-export const StyledSearchDescriptionText = styled.div `
+export const StyledSearchDescriptionText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -204,35 +198,29 @@ export const StyledSearchDescriptionText = styled.div `
   }
 `;
 
-export const StyledContinueBtn = styled.button `
+export const StyledContinueBtn = styled.button`
   display: flex;
   padding: 1rem;
   margin: 2rem 0;
-  outline: 1px solid ${({ theme }) => theme.colors.reversedClr};
+  /* outline: 1px solid ${({ theme }) => theme.colors.reversedClr}; */
   border: none;
   justify-content: center;
   width: 100%;
   cursor: pointer;
   z-index: 2;
-  color: ${({ theme }) => theme.colors.reversedClr};
+  color: ${({ theme }) => theme.colors.constLight};
   opacity: 0;
   pointer-events: none;
-  background-color: ${({ theme }) => theme.colors.light};
+  background-color: ${({ theme }) => theme.colors.dark};
   font-weight: bolder;
 
   &.visible {
     opacity: 1;
     pointer-events: all;
   }
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.light};
-    background-color: ${({ theme }) => theme.colors.reversedClr};
-    /* filter: brightness(120%); */
-  }
 `;
 
-export const StyledQuryValue = styled.header `
+export const StyledQuryValue = styled.header`
   flex: 1 1 100%;
   display: flex;
   margin: auto;
