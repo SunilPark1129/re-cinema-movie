@@ -10,6 +10,7 @@ import {
   StyledPreventAutoFit,
   StyledSearchDescription,
   StyledSearchDescriptionText,
+  StyledContinueBox,
   StyledContinueBtn,
   StyledQuryValue,
   StyledRecommended,
@@ -146,12 +147,14 @@ const Lists = ({
               <Loading />
             ) : (
               datas !== undefined && (
-                <StyledContinueBtn
-                  className={obj[query].continue ? "visible" : ""}
-                  onClick={nextPageClickHandler}
-                >
-                  SEE MORE
-                </StyledContinueBtn>
+                <StyledContinueBox>
+                  <StyledContinueBtn
+                    className={obj[query].continue ? "visible" : ""}
+                    onClick={nextPageClickHandler}
+                  >
+                    SEE MORE
+                  </StyledContinueBtn>
+                </StyledContinueBox>
               )
             )}
           </>

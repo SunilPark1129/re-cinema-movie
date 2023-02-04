@@ -198,21 +198,28 @@ export const StyledSearchDescriptionText = styled.div`
   }
 `;
 
+export const StyledContinueBox = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 export const StyledContinueBtn = styled.button`
   display: flex;
   padding: 1rem;
-  margin: 2rem 0;
-  /* outline: 1px solid ${({ theme }) => theme.colors.reversedClr}; */
+  border-radius: 0.5rem;
+  margin: 1rem 0;
   border: none;
-  justify-content: center;
-  width: 100%;
   cursor: pointer;
   z-index: 2;
-  color: ${({ theme }) => theme.colors.constLight};
+  color: ${({ theme }) => theme.colors.reversedClr};
   opacity: 0;
   pointer-events: none;
-  background-color: ${({ theme }) => theme.colors.dark};
   font-weight: bolder;
+
+  &:hover {
+    outline: 1px solid ${({ theme }) => theme.colors.reversedClr};
+  }
 
   &.visible {
     opacity: 1;
