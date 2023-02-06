@@ -44,41 +44,43 @@ const Navbar = ({ colorMode, setColorMode }) => {
     setColorMode(!colorMode);
   };
   return (
-    <StyledNavbar>
-      <Link to={`/`}>
-        <img src={logo} alt="CM_logo" />
-      </Link>
-      <StyledNavbarLink>
-        {links.map(({ path, label, exact }) => {
-          return (
-            <li key={label}>
-              <NavLink
-                exact={exact}
-                to={path}
-                className={({ isActive }) => (isActive ? "isActived" : "")}
-              >
-                {label}
-              </NavLink>
-            </li>
-          );
-        })}
-      </StyledNavbarLink>
-      <StyledNavbarFeature>
-        <Input />
-        <StyledDarkMode
-          onClick={modeClickHandler}
-          className={colorMode ? "lightMode" : "darkMode"}
-        >
-          <span></span>
-          <p>
-            <FontAwesomeIcon icon={faMountainSun} />
-          </p>
-          <p>
-            <FontAwesomeIcon icon={faMoon} />
-          </p>
-        </StyledDarkMode>
-      </StyledNavbarFeature>
-    </StyledNavbar>
+    <header>
+      <StyledNavbar>
+        <Link to={`/`}>
+          <img src={logo} alt="CM_logo" />
+        </Link>
+        <StyledNavbarLink>
+          {links.map(({ path, label, exact }) => {
+            return (
+              <li key={label}>
+                <NavLink
+                  exact={exact}
+                  to={path}
+                  className={({ isActive }) => (isActive ? "isActived" : "")}
+                >
+                  {label}
+                </NavLink>
+              </li>
+            );
+          })}
+        </StyledNavbarLink>
+        <StyledNavbarFeature>
+          <Input />
+          <StyledDarkMode
+            onClick={modeClickHandler}
+            className={colorMode ? "lightMode" : "darkMode"}
+          >
+            <span></span>
+            <p>
+              <FontAwesomeIcon icon={faMountainSun} />
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faMoon} />
+            </p>
+          </StyledDarkMode>
+        </StyledNavbarFeature>
+      </StyledNavbar>
+    </header>
   );
 };
 
