@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledContent = styled.section `
+export const StyledContent = styled.section`
   display: flex;
   position: fixed;
   left: 50%;
@@ -14,6 +14,7 @@ export const StyledContent = styled.section `
   z-index: 999;
   box-shadow: 0px 15px 15px 5px black;
   flex-direction: column;
+  padding: 0.5em;
 
   h2,
   h3,
@@ -35,7 +36,7 @@ export const StyledContent = styled.section `
   }
 `;
 
-export const StyledContentHeader = styled.header `
+export const StyledContentHeader = styled.header`
   .loading {
     filter: blur(10px);
     &--completed {
@@ -49,7 +50,7 @@ export const StyledContentHeader = styled.header `
   }
 `;
 
-export const StyledContentHeaderImage = styled.div `
+export const StyledContentHeaderImage = styled.div`
   width: 100%;
   position: relative;
   top: 0;
@@ -78,7 +79,7 @@ export const StyledContentHeaderImage = styled.div `
   }
 `;
 
-export const StyledContentLine = styled.span `
+export const StyledContentLine = styled.span`
   display: block;
   width: 94%;
   height: 0.3rem;
@@ -87,7 +88,7 @@ export const StyledContentLine = styled.span `
   margin: auto;
 `;
 
-export const StyledContentBtn = styled.div `
+export const StyledContentBtn = styled.div`
   display: flex;
   border: 1px solid ${({ theme }) => theme.colors.constLight};
   background-color: ${({ theme }) => theme.colors.constDark};
@@ -103,19 +104,19 @@ export const StyledContentBtn = styled.div `
   z-index: 99;
 `;
 
-export const StyledContentMain = styled.main `
+export const StyledContentMain = styled.main`
   display: flex;
   padding: 1rem;
   flex-direction: column;
   gap: 1rem;
 `;
 
-export const StyledContentText = styled.section `
+export const StyledContentText = styled.section`
   display: flex;
   flex-direction: column;
 `;
 
-export const StyledContentPoster = styled.section `
+export const StyledContentPoster = styled.section`
   width: 100%;
   h3,
   p {

@@ -19,7 +19,6 @@ const Aside = ({ genreID, setGenreID }) => {
         <img src={logo} alt="CM_logo" />
       </StyledAsideLogo>
       <h1>GENRES</h1>
-      <h4>{request[genreID].genre}</h4>
       <span />
       <ul>
         {request.map((item, idx) => {

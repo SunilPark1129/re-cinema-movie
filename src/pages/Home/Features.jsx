@@ -15,7 +15,7 @@ const Features = ({ sortByURL, setSortByURL, viewBy, setViewBy }) => {
   return (
     <StyledSectionHeader>
       <StyledFeature>
-        <h3>Sort By</h3>
+        <h4>Sort By</h4>
         {Object.getOwnPropertyNames(sortBy).map((item) => {
           return (
             <div
@@ -31,7 +31,7 @@ const Features = ({ sortByURL, setSortByURL, viewBy, setViewBy }) => {
         })}
       </StyledFeature>
       <StyledFeature>
-        <h3>View By</h3>
+        <h4>View By</h4>
         <div
           onClick={() => setViewBy(true)}
           className={viewBy ? "isActived" : ""}

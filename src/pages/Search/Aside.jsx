@@ -61,7 +61,6 @@ const Aside = () => {
       <h1 className="searchpage">SEARCH</h1>
       <Input searchpage={true} />
       <span></span>
-      {historyArray.length !== 0 && <h3 className="history">History</h3>}
       <StyledAsideHistory>
         {historyArray.map((item, idx) => {
           return (

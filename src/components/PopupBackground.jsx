@@ -29,7 +29,7 @@ const PopupBackground = ({ setSelectedMovieID }) => {
     // Close the Content.jsx by set selectedMovieID as Null
     setSelectedMovieID(null);
   };
-  return <StyledPopup onClick={onClickHandler}>PopupBackground</StyledPopup>;
+  return <StyledPopup onClick={onClickHandler} />;
 };
 
 export default PopupBackground;

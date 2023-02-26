@@ -14,7 +14,7 @@ const Features = ({ viewBy, setViewBy }) => {
   return (
     <StyledSectionHeader>
       <StyledFeature>
-        <h3>View By</h3>
+        <h4>View By</h4>
         <div
           onClick={() => setViewBy(true)}
           className={viewBy ? "isActived" : ""}

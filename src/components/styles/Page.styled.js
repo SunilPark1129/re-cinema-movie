@@ -52,6 +52,10 @@ export const StyledSection = styled.section`
 
 export const StyledSectionSearch = styled(StyledSection)`
   min-height: 40rem;
+  padding: 0 1rem;
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    padding: 0;
+  }
 `;
 
 export const StyledRecommended = styled.header`
@@ -102,6 +106,10 @@ export const StyledFeature = styled.section`
   align-items: center;
   flex-wrap: wrap;
 
+  p {
+    font-size: 0.9em;
+  }
+
   > div {
     display: flex;
     align-items: center;
@@ -126,7 +134,7 @@ export const StyledFeature = styled.section`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     gap: 0.5rem;
 
-    h3 {
+    h4 {
       flex: 1 1 100%;
     }
   }
@@ -135,46 +143,6 @@ export const StyledFeature = styled.section`
 export const StyledPreventAutoFit = styled.div`
   height: auto;
   flex: 1 1 10%;
-`;
-
-export const StyledYearStyle = styled.section`
-  display: flex;
-  align-items: center;
-  gap: 0 !important;
-
-  h3 {
-    padding-right: 1em;
-  }
-
-  input {
-    text-align: center;
-    padding: 0 0.5rem;
-    width: 4rem;
-    height: 100%;
-    outline: none;
-    color: black !important;
-    border: 4px solid ${({ theme }) => theme.colors.main};
-  }
-
-  > div {
-    background-color: ${({ theme }) => theme.colors.main};
-    height: 100%;
-    padding: 0 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
-    &:hover {
-      color: ${({ theme }) => theme.colors.dark};
-    }
-  }
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    h3 {
-      padding-right: 0.5em;
-    }
-  }
 `;
 
 export const StyledSearchDescription = styled.article`
@@ -238,8 +206,7 @@ export const StyledQuryValue = styled.header`
   flex-direction: column;
   text-align: center;
 
-  p,
-  h3 {
+  p {
     color: ${({ theme }) => theme.colors.reversedClr};
   }
 `;

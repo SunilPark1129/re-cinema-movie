@@ -37,8 +37,9 @@ export const StyledAside = styled.aside`
     padding: 1rem 0;
     color: ${({ theme }) => theme.colors.constLight};
     text-align: center;
-    padding-right: 1rem;
-    width: 100%;
+    margin-left: auto;
+    padding-right: 23%;
+    width: 80%;
     cursor: pointer;
     position: relative;
 
@@ -125,6 +126,11 @@ export const StyledAside = styled.aside`
       padding: 0.5rem 1rem;
       width: auto;
       border: 1px solid white;
+      margin-left: 0;
+    }
+
+    p {
+      font-size: 0.9em;
     }
 
     span {
@@ -171,10 +177,9 @@ export const StyledAsideHistory = styled.div`
 export const StyledAsideHistoryText = styled.div`
   display: flex;
   overflow: hidden;
-  border-radius: 0.5rem;
   position: relative;
   align-items: center;
-  border: 1px solid ${({ theme }) => theme.colors.constLight};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.constLight};
 
   p {
     text-align: center;
@@ -185,7 +190,6 @@ export const StyledAsideHistoryText = styled.div`
     text-overflow: ellipsis;
     cursor: pointer;
     padding: 0.5rem;
-    border-right: 1px solid ${({ theme }) => theme.colors.constLight};
     &:hover {
       color: ${({ theme }) => theme.colors.main};
     }
