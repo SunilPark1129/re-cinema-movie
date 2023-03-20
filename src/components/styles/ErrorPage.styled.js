@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledErrorPage = styled.div `
+export const StyledErrorPage = styled.section`
   margin: auto;
   width: 100%;
   min-height: 100vh;
@@ -10,7 +10,7 @@ export const StyledErrorPage = styled.div `
   align-items: center;
   width: 100%;
 `;
-export const StyledErrorPageHeader = styled.header `
+export const StyledErrorPageHeader = styled.header`
   display: flex;
   align-items: baseline;
   color: var(--main-clr);
@@ -31,7 +31,7 @@ export const StyledErrorPageHeader = styled.header `
     }
   }
 `;
-export const StyledErrorPageMain = styled.main `
+export const StyledErrorPageMain = styled.main`
   h3 {
     font-size: 2em;
     color: rgb(153, 153, 153);

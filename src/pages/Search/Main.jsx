@@ -7,7 +7,7 @@ Created by Sunil Park
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { StyledMain } from "../../components/styles/Page.styled";
+import { StyledArticle } from "../../components/styles/Page.styled";
 import { StyledSearchDescription } from "../../components/styles/Page.styled";
 import Tip from "../../components/Tip";
 import Features from "./Features";
@@ -23,7 +23,7 @@ const Main = () => {
   const [viewBy, setViewBy] = useState(true);
 
   return (
-    <StyledMain>
+    <StyledArticle>
       <Features viewBy={viewBy} setViewBy={(bool) => setViewBy(bool)} />
       {id !== undefined ? (
         <Lists
@@ -51,7 +51,7 @@ const Main = () => {
         </>
       )}
       <span></span>
-    </StyledMain>
+    </StyledArticle>
   );
 };
 

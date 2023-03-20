@@ -20,7 +20,7 @@ const movieListAni = keyframes`
 }
 `;
 
-export const StyledListByImage = styled.article`
+export const StyledListByImage = styled.section`
   display: flex;
   flex: 0 0 20%;
   padding-bottom: 30%;
@@ -60,7 +60,7 @@ export const StyledListByImage = styled.article`
   }
 `;
 
-export const StyledListByText = styled.article`
+export const StyledListByText = styled.section`
   display: flex;
   flex: 1 1 100%;
   height: 8rem;

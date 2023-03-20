@@ -21,7 +21,7 @@ import Main from "./pages/Search/Main";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-import { StyledContainer } from "./components/styles/Container.styled";
+import { StyledWrapper } from "./components/styles/Wrapper.styled";
 
 function App() {
   const [colorMode, setColorMode] = useState(true);
@@ -34,7 +34,7 @@ function App() {
           colorMode={colorMode}
           setColorMode={(obj) => setColorMode(obj)}
         />
-        <StyledContainer>
+        <StyledWrapper>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/search" element={<Search />}>
@@ -43,7 +43,7 @@ function App() {
             <Route path="/*" element={<ErrorPage />} />
             <Route path="/info" element={<Info />} />
           </Routes>
-        </StyledContainer>
+        </StyledWrapper>
         <Footer />
       </Router>
     </ThemeProvider>

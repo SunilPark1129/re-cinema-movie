@@ -1,24 +1,30 @@
 import styled from "styled-components";
 
-export const StyledNavbar = styled.nav `
+export const StyledNavbar = styled.nav`
   display: flex;
-  padding: 1rem 2rem;
-  gap: 2rem;
   background-color: ${({ theme }) => theme.colors.dark};
+
+  /* child div is wrapper */
+  > div {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
 
   img {
     height: 2.5rem;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    padding: 0.5rem;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: center;
+    > div {
+      padding: 0.5rem;
+      gap: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
-export const StyledNavbarLink = styled.ul `
+export const StyledNavbarLink = styled.ul`
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -31,7 +37,7 @@ export const StyledNavbarLink = styled.ul `
   }
 `;
 
-export const StyledNavbarFeature = styled.div `
+export const StyledNavbarFeature = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -42,7 +48,7 @@ export const StyledNavbarFeature = styled.div `
   }
 `;
 
-export const StyledDarkMode = styled.button `
+export const StyledDarkMode = styled.button`
   /* background-color: white; */
   position: relative;
   display: flex;

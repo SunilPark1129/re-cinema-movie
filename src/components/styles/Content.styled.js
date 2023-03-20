@@ -104,24 +104,20 @@ export const StyledContentBtn = styled.div`
   z-index: 99;
 `;
 
-export const StyledContentMain = styled.main`
+export const StyledContentMain = styled.section`
   display: flex;
   padding: 1rem;
   flex-direction: column;
   gap: 1rem;
 `;
 
-export const StyledContentText = styled.section`
+export const StyledContentText = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const StyledContentPoster = styled.section`
+export const StyledContentPoster = styled.div`
   width: 100%;
-  h3,
-  p {
-    text-align: center;
-  }
   img {
     width: 100%;
   }

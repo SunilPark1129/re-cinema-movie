@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { StyledListByImage } from "./MovieList.styled";
 
-export const StyledPage = styled.section`
+export const StyledPage = styled.main`
   display: flex;
   width: 100%;
 
@@ -10,7 +9,7 @@ export const StyledPage = styled.section`
   }
 `;
 
-export const StyledMain = styled.main`
+export const StyledArticle = styled.article`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -45,12 +44,12 @@ export const StyledMain = styled.main`
   }
 `;
 
-export const StyledSection = styled.section`
+export const StyledFlex = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
-export const StyledSectionSearch = styled(StyledSection)`
+export const StyledSectionSearch = styled(StyledFlex)`
   min-height: 40rem;
   padding: 0 1rem;
   @media (max-width: ${({ theme }) => theme.tablet}) {
@@ -63,7 +62,7 @@ export const StyledRecommended = styled.header`
   min-height: 18rem;
 `;
 
-export const StyledSectionHeader = styled(StyledSection)`
+export const StyledSectionHeader = styled(StyledFlex)`
   display: flex;
   gap: 1rem;
   padding: 1em;
@@ -151,7 +150,7 @@ export const StyledSearchDescription = styled.article`
   padding: 2rem;
 `;
 
-export const StyledSearchDescriptionText = styled.div`
+export const StyledSearchDescriptionText = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1rem;

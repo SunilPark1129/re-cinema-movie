@@ -105,7 +105,9 @@ const Content = ({ data, setSelectedMovieID }) => {
           </p>
         </StyledContentText>
         <StyledContentPoster>
-          <h3>Main Poster</h3>
+          <p>
+            <span>Main Poster</span>
+          </p>
           {data.poster_path !== null ? (
             <img
               src={`https://image.tmdb.org/t/p/w500/${data.poster_path}`}

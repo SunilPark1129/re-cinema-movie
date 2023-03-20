@@ -5,7 +5,7 @@ Created by Sunil Park
 */
 
 import React, { useState } from "react";
-import { StyledMain } from "../../components/styles/Page.styled";
+import { StyledArticle } from "../../components/styles/Page.styled";
 import Content from "../../components/Content";
 import PopupBackground from "../../components/PopupBackground";
 import Features from "./Features";
@@ -25,7 +25,7 @@ const Main = ({ genreID }) => {
   const [viewBy, setViewBy] = useState(true);
 
   return (
-    <StyledMain>
+    <StyledArticle>
       <Features
         sortByURL={sortByURL}
         setSortByURL={(str) => setSortByURL(str)}
@@ -58,7 +58,7 @@ const Main = ({ genreID }) => {
         </>
       )}
       <span></span>
-    </StyledMain>
+    </StyledArticle>
   );
 };
 

@@ -15,6 +15,7 @@ import {
   StyledNavbarFeature,
   StyledDarkMode,
 } from "./styles/Navbar.styled";
+import { StyledWrapper } from "./styles/Wrapper.styled";
 import logo from "../assets/main_logo.png";
 
 import Input from "./Input";
@@ -46,39 +47,41 @@ const Navbar = ({ colorMode, setColorMode }) => {
   return (
     <header>
       <StyledNavbar>
-        <Link to={`/`}>
-          <img src={logo} alt="CM_logo" />
-        </Link>
-        <StyledNavbarLink>
-          {links.map(({ path, label, exact }) => {
-            return (
-              <li key={label}>
-                <NavLink
-                  exact={exact}
-                  to={path}
-                  className={({ isActive }) => (isActive ? "isActived" : "")}
-                >
-                  {label}
-                </NavLink>
-              </li>
-            );
-          })}
-        </StyledNavbarLink>
-        <StyledNavbarFeature>
-          <Input />
-          <StyledDarkMode
-            onClick={modeClickHandler}
-            className={colorMode ? "lightMode" : "darkMode"}
-          >
-            <span></span>
-            <p>
-              <FontAwesomeIcon icon={faMountainSun} />
-            </p>
-            <p>
-              <FontAwesomeIcon icon={faMoon} />
-            </p>
-          </StyledDarkMode>
-        </StyledNavbarFeature>
+        <StyledWrapper>
+          <Link to={`/`}>
+            <img src={logo} alt="CM_logo" />
+          </Link>
+          <StyledNavbarLink>
+            {links.map(({ path, label, exact }) => {
+              return (
+                <li key={label}>
+                  <NavLink
+                    exact={exact}
+                    to={path}
+                    className={({ isActive }) => (isActive ? "isActived" : "")}
+                  >
+                    {label}
+                  </NavLink>
+                </li>
+              );
+            })}
+          </StyledNavbarLink>
+          <StyledNavbarFeature>
+            <Input />
+            <StyledDarkMode
+              onClick={modeClickHandler}
+              className={colorMode ? "lightMode" : "darkMode"}
+            >
+              <span></span>
+              <p>
+                <FontAwesomeIcon icon={faMountainSun} />
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faMoon} />
+              </p>
+            </StyledDarkMode>
+          </StyledNavbarFeature>
+        </StyledWrapper>
       </StyledNavbar>
     </header>
   );
