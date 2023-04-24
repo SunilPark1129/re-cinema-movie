@@ -5,7 +5,7 @@ Go to website - [Link](https://sp-cinemamovie.netlify.app)
 
 ## Project Description
 
-- Cafe Milk, a cafe.
+- A website where users can get recommendations or search for movies.
 
 ## Features
 > Features that I would like to introduce.
