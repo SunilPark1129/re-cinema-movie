@@ -5,7 +5,7 @@ Go to website - [Link](https://sp-cinemamovie.netlify.app)
 
 ## Project Description
 
-- A website where users can get recommendations or search for movies.
+- Cinema Movie fetches movie information from The Movie Database and shares the information with users on a new platform. You can search for a movie through this website or click on a recommended movie to find the information.
 
 ## Features
 > Features that I would like to introduce.
