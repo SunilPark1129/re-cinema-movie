@@ -2,7 +2,7 @@
 ![cinema movie](https://user-images.githubusercontent.com/106734133/209891568-f9ecbe96-6a97-43ae-8963-e1bf384af288.jpg)
 
 Go to website - [Link](https://sp-cinemamovie.netlify.app)<br>
-Go to old version website - [Link](https://github.com/SunilPark1129/cinema-movie)
+Go to old website - [Link](https://github.com/SunilPark1129/cinema-movie)
 
 ## Project Description
 
