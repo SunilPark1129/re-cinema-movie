@@ -3,6 +3,7 @@
 
 Go to website - [Link](https://sp-cinemamovie.netlify.app)<br>
 Go to old website - [Link](https://github.com/SunilPark1129/cinema-movie)
+Go to updated version website - [Link](https://github.com/SunilPark1129/c-movie-today)
 
 ## Project Description
 
